@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "24734752-1540-405e-ab31-bfac5047499e",
+		"name": "backend-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/servicio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProducts Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 102,\r\n        \"nombre\": \"test cliente\",\r\n        \"apellido\": \"test cliente\",\r\n        \"email\": \"test cliente\",\r\n        \"telefono\": \"213123\",\r\n        \"direccion\": \"test cliente direccion\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 2,\r\n        \"name\": \"231321\",\r\n        \"lastname\": null,\r\n        \"description\": \"lUCKY IN TE SKYYY\",\r\n        \"price\": 1500.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 9,\r\n        \"name\": \"MAC\",\r\n        \"lastname\": null,\r\n        \"description\": \"Lucky\",\r\n        \"price\": 1500.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
